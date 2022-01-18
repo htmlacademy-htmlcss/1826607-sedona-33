@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Aleksandr Andreev](https://up.htmlacademy.ru/htmlcss/33/user/1826607).
-* Наставник: `https://htmlacademy.ru/profile/gennadiy`.
+* Наставник: [Gennadiy Maksimov](https://htmlacademy.ru/profile/gennadiy).
 
 ---
 
