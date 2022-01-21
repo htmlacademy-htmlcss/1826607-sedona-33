@@ -7,51 +7,51 @@
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-  <link rel="stylesheet" href="style/style.css">
+  <meta name="theme-color" content="#83B3D3">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <!-- Header content -->
-  <header class="main-header">
-    <nav class="nav">
-      <a href="#" class="logo">
-        <img src="" width="" height="" alt="Логотип Седоны">
-      </a>
-      <ul class="nav-items">
-        <li><a href="#" class="item">Главная</a></li>
-        <li><a href="#" class="item">О Седоне</a></li>
-        <li><a href="#" class="item">Гостиницы</a></li>
+  <header class="page-header">
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+        </li>
       </ul>
-      <form action="#" method="post">
-        <input type="search" placeholder="">
-      </form>
-      <button class="btn btn-primary">Хочу сюда!</button>
+
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Искать по гостиницам</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Перейти в избранное</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Забронировать гостиницу</span>
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <!-- Main content -->
-  <main>
-    <section class="about">
-      <h2 class="visually-hidden">Что такое Седона?</h2>
-    </section>
-    <section class="description">
-      <h2 class="visually-hidden">Что предлагает Седона?</h2>
-    </section>
-    <section class="trip-search">
-      <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
-    </section>
-  </main>
 
   <!-- Footer content -->
-  <footer class="main-footer">
-    <section class="offer">
-      <h2 class="visually-hidden">Подписаться на рассылку полезной информации</h2>
-    </section>
-    <address>
-      <a href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
-    </address>
-  </footer>
+
 
 </body>
 
