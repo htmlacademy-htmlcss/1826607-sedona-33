@@ -17,14 +17,12 @@
   <!-- Header content -->
   <header class="page-header">
     <nav class="navigation">
+      <a class="navigation-logo" href="#">
+        <img class="page-header-logo" src="" alt="Логотип Седоны">
+      </a>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link visually-hidden" href="#">Главная
-            <img class="logo" src="" alt="Логотип Седоны">
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Главная</a>
+          <a class="navigation-link navigation-link-current" href="#">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О Седоне</a>
@@ -133,7 +131,9 @@
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="subscription-form-email">
           <input type="email" name="subscription-email" placeholder="Ваш e-mail">
-          <button class="btn btn-secondary" type="submit">Подписаться</button>
+        </p>
+        <p class="subscription-form-send">
+          <input class="btn btn-secondary" type="submit" value="Подписаться"></input>
         </p>
       </form>
     </section>
