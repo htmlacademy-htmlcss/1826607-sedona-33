@@ -30,7 +30,6 @@
           <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
         </li>
       </ul>
-
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
@@ -52,9 +51,78 @@
   </header>
 
   <!-- Main content -->
-  <main class="main-index">
+  <main class="main-inner">
+    <header class="inner-header">
+      <h1 class="inner-header-title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
+        <span class="arrow-right"></span>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="#">
+            <span class="visually-hidden">Гостиницы</span>
+          </a>
+        </li>
+      </ul>
+    </header>
 
-
+    <section class="catalog-filters">
+      <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+      <form action="https://echo.htmlacademy.ru/" class="catalog-form" method="get">
+        <fieldset class="catalog-filters-group">
+          <legend class="catalog-filters-title">Инфраструктура:</legend>
+          <ul class="catalog-filters-list">
+            <li class="catalog-filters-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="pool" checked>Бассейн
+              </label>
+            </li>
+            <li class="catalog-filters-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="parking" checked>Парковка
+              </label>
+            </li>
+            <li class="catalog-filters-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="netword">Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-filters-group">
+          <legend class="catalog-filters-title">Тип жилья:</legend>
+          <ul class="catalog-filters-list">
+            <li class="catalog-filters-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="living-type" value="Гостиница" checked>Гостиница
+              </label>
+            </li>
+            <li class="catalog-filters-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="living-type" value="Мотель">Мотель
+              </label>
+            </li>
+            <li class="catalog-filters-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="living-type" value="Апартаменты">Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-filters-group">
+          <legend class="catalog-filters-title">Стоимость, ₽:</legend>
+          <p class="catalog-filters-form">
+            <input class="control-input" type="number" name="living-cost-min" placeholder="0">
+            <input class="control-input" type="number" name="living-cost-max" placeholder="9000">
+          </p>
+        </fieldset>
+        <input class="btn btn-primary" type="submit" value="Применить">
+        <input class="btn btn-flat" type="reset" value="Сбросить">
+      </form>
+    </section>
     <section class="subscription">
       <h2 class="visually-hidden">Подписаться на рассылку</h2>
       <b class="subscription-title">Подпишитесь на рассылку</b>
