@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
@@ -17,34 +16,28 @@
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" src="" alt="Логотип Седоны">
+        <img class="page-header-logo" src="" width="139px" height="70px" alt="Логотип Седоны">
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">О Седоне</a>
+          <a class="navigation-link" href="#nowhere">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
+          <a class="navigation-link navigation-link-current" href="#nowhere">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">Искать по гостиницам</span>
-          </a>
+          <a class="navigation-search" href="#nowhere" arial-label="Искать по гостиницам"></a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">Перейти в избранное</span>
-          </a>
+          <a class="navigation-favorite" href="#nowhere" arial-label="Перейти в избранное"></a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">Забронировать гостиницу</span>
-          </a>
+          <a class="navigation-booking" href="#nowhere" arial-label="Забронировать гостиницу">Хочу сюда</a>
         </li>
       </ul>
     </nav>
@@ -62,7 +55,7 @@
         </li>
         <span class="arrow-right"></span>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="#">
+          <a class="breadcrumbs-link" href="#nowhere">
             <span class="visually-hidden">Гостиницы</span>
           </a>
         </li>
@@ -133,15 +126,15 @@
       </select>
       <ul class="sort-view-list">
         <li class="sort-view-item">
-          <a class="btn btn-outline" href="#">
+          <a class="btn btn-outline" href="#nowhere">
             <span class="visually-hidden">Показать карточки</span>
           </a>
         </li>
         <li class="sort-view-item">
-          <a class="btn btn-outline" href="#">Показать по одному в полный вид</a>
+          <a class="btn btn-outline" href="#nowhere">Показать по одному в полный вид</a>
         </li>
         <li class="sort-view-item">
-          <a class="btn btn-outline" href="#">Показать список</a>
+          <a class="btn btn-outline" href="#nowhere">Показать список</a>
         </li>
       </ul>
     </section>
@@ -149,7 +142,7 @@
     <section class="catalog">
       <ul class="catalog-list">
         <div class="hotel-card">
-          <a class="hotel-card-link" href="#">
+          <a class="hotel-card-link" href="#nowhere">
             <img class="hotel-card-img" src="" alt="Гостиница Amara Resort & Spa">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           </a>
@@ -170,7 +163,7 @@
           </footer>
         </div>
         <div class="hotel-card">
-          <a class="hotel-card-link" href="#">
+          <a class="hotel-card-link" href="#nowhere">
             <img class="hotel-card-img" src="" alt="Гостиница Desert Quail Inn">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
@@ -191,7 +184,7 @@
           </footer>
         </div>
         <div class="hotel-card">
-          <a class="hotel-card-link" href="#">
+          <a class="hotel-card-link" href="#nowhere">
             <img class="hotel-card-img" src="" alt="Гостиница Villas at Poco Diablo">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
@@ -212,7 +205,7 @@
           </footer>
         </div>
         <div class="hotel-card">
-          <a class="hotel-card-link" href="#">
+          <a class="hotel-card-link" href="#nowhere">
             <img class="hotel-card-img" src="" alt="Гостиница GreenTree Inn">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
@@ -240,22 +233,22 @@
         <span class="divider"></span>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-link-current" href="#">1</a>
+            <a class="pagination-link pagination-link-current" href="#nowhere">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link" href="#nowhere">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="pagination-link" href="#nowhere">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
+            <a class="pagination-link" href="#nowhere">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link" href="#nowhere">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
+            <a class="pagination-link" href="#nowhere">10</a>
           </li>
         </ul>
       </footer>
@@ -289,8 +282,30 @@
 
   <!-- Footer content -->
   <footer class="page-footer">
-
-
+    <div class="footer-social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="btn-flat" href="https://twitter.com/htmlacademy_ru" target="_blank">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="btn-flat" href="https://www.facebook.com/htmlacademy" target="_blank">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="btn-flat" href="https://www.youtube.com/c/HTMLAcademyRUS" target="_blank">
+            <span class="visually-hidden">You Tube</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <a class="footer-phone" href="tel=:78128121212">+7 (812) 812-12-12</a>
+    <a class="footer-logo" href="index.html">
+      <img class="fnavigation-logo" src="" alt="Логотип HTML Academy">
+    </a>
   </footer>
 </body>
 
