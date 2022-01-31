@@ -31,13 +31,13 @@
         </ul>
         <ul class="user-navigation">
           <li class="user-navigation-item">
-            <a class="user-navigation-search" href="#nowhere" arial-label="Искать по гостиницам"></a>
+            <a class="user-navigation-search" href="#nowhere" aria-label="Искать по гостиницам"></a>
           </li>
           <li class="user-navigation-item">
-            <a class="user-navigation-favorite" href="#nowhere" arial-label="Перейти в избранное"></a>
+            <a class="user-navigation-favorite" href="#nowhere" aria-label="Перейти в избранное"></a>
           </li>
           <li class="user-navigation-item">
-            <a class="user-navigation-booking" href="#nowhere" arial-label="Забронировать гостиницу">Хочу сюда</a>
+            <a class="user-navigation-booking" href="#nowhere" aria-label="Забронировать гостиницу">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -52,7 +52,7 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html" aria-label="Главная"></a>
           </li>
-          <span class="arrow-right"></span>
+          <li class="arrow-right"></li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="catalog.html" aria-label="Гостиницы"></a>
           </li>
@@ -116,7 +116,7 @@
 
     <section class="search-sort-wrapper">
       <h2 class="search-sort-title">Найдено гостиниц:<span class="search-counter">38</span></h2>
-      <select class="select-control" arial-label="Сортировка" name="sort-search">
+      <select class="select-control" aria-label="Сортировка" name="sort-search">
         <option value="cheap">Сначала дешёвые</option>
         <option value="popular">Сначала популярное</option>
         <option value="expensive">Сначала дорогое</option>
@@ -135,9 +135,10 @@
     </section>
     <section class="catalog">
       <ul class="catalog-list">
-        <div class="hotel-card">
+        <li class="hotel-card">
           <a class="hotel-card-link" href="#nowhere">
-            <img class="hotel-card-img" src="images/hotels/hotel-1.jpg" alt="Гостиница Amara Resort & Spa">
+            <img class="hotel-card-img" src="images/hotels/hotel-1.jpg" width="299" height="206"
+              alt="Гостиница Amara Resort & Spa">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           </a>
           <div class="photel-card-body">
@@ -149,10 +150,11 @@
             <div class="rate"></div>
             <button class="btn btn-flat">Рейтинг: <span class="rate-count">8,5</span></button>
           </footer>
-        </div>
-        <div class="hotel-card">
+        </li>
+        <li class="hotel-card">
           <a class="hotel-card-link" href="#nowhere">
-            <img class="hotel-card-img" src="images/hotels/hotel-2.jpg" alt="Гостиница Desert Quail Inn">
+            <img class="hotel-card-img" src="images/hotels/hotel-2.jpg" width="299" height="206"
+              alt="Гостиница Desert Quail Inn">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
           <div class="photel-card-body">
@@ -164,10 +166,11 @@
             <div class="rate"></div>
             <button class="btn btn-flat">Рейтинг: <span class="rate-count">8,9</span></button>
           </footer>
-        </div>
-        <div class="hotel-card">
+        </li>
+        <li class="hotel-card">
           <a class="hotel-card-link" href="#nowhere">
-            <img class="hotel-card-img" src="images/hotels/hotel-3.jpg" alt="Гостиница Villas at Poco Diablo">
+            <img class="hotel-card-img" src="images/hotels/hotel-3.jpg" width="299" height="206"
+              alt="Гостиница Villas at Poco Diablo">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
           <div class="photel-card-body">
@@ -179,8 +182,8 @@
             <div class="rate"></div>
             <button class="btn btn-flat">Рейтинг: <span class="rate-count">9,2</span></button>
           </footer>
-        </div>
-        <div class="hotel-card">
+        </li>
+        <li class="hotel-card">
           <a class="hotel-card-link" href="#nowhere">
             <img class="hotel-card-img" src="images/hotels/hotel-4.jpg" alt="Гостиница GreenTree Inn">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -194,7 +197,7 @@
             <div class="rate"></div>
             <button class="btn btn-flat">Рейтинг: <span class="rate-count">9,2</span></button>
           </footer>
-        </div>
+        </li>
       </ul>
       <footer class="catalog-footer">
         <span class="divider"></span>
@@ -222,14 +225,13 @@
         </ul>
       </footer>
       <p class="footer-control-description">Гостиниц на странице:
-        <select class="select-control" arial-label="Показ количества гостиниц" name="sort-search-count">
+        <select class="select-control" aria-label="Показ количества гостиниц" name="sort-search-count">
           <option value="4">Показывать по 4</option>
           <option value="10">Показывать по 10</option>
           <option value="Все">Показывать все</option>
         </select>
       </p>
     </section>
-    <section class="inner-footer"></section>
 
     <section class="subscription">
       <h2 class="visually-hidden">Подписаться на рассылку</h2>
@@ -240,7 +242,7 @@
           <input type="email" name="subscription-email" placeholder="Ваш e-mail">
         </p>
         <p class="subscription-form-send">
-          <input class="btn btn-secondary" type="submit" value="Подписаться"></input>
+          <input class="btn btn-secondary" type="submit" value="Подписаться">
         </p>
       </form>
     </section>
@@ -260,7 +262,9 @@
         </li>
       </ul>
       <a class="footer-phone" href="tel=:78128121212">+7 (812) 812-12-12</a>
-      <a class="footer-logo" href="https://htmlacademy.ru" aria-label="HTML Academy" target="_blank"></a>
+      <a class="footer-logo" href="https://htmlacademy.ru" target="_blank">
+        <img src="images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy">
+      </a>
     </div>
   </footer>
 </body>
