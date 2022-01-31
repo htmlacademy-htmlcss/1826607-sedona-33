@@ -23,5 +23,6 @@
 body {
     margin: 0;
     font-family: "Roboto", "Open Sans", sans-serif;
+    color: var(--basic-black);
     background-color: var(--basic-light);
 }
