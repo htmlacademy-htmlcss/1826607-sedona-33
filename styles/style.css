@@ -1,28 +1,21 @@
 :root {
-    /* Base colors */
-    --basic-black: rgba(0, 0, 0, 1);
-    --basic-dark: rgba(51, 51, 51, 1);
-    --basic-grey: rgba(229, 229, 229, 1);
-    --basic-light: rgba(242, 242, 242, 1);
-    --basic-white: rgba(255, 255, 255, 1);
-    /* Status colors */
-    --status-success: rgba(125, 181, 80, 1);
-    --status-warning: rgba(253, 146, 46, 1);
-    --status-error: rgba(255, 87, 87, 1);
-    /* Special colors*/
-    --special-cold-dark: rgba(104, 162, 202, 1);
-    --special-cold-light: rgba(131, 179, 211, 1);
-    --special-cold-light-12: rgba(131, 179, 211, 0.12);
-    --special-cold-light-20: rgba(131, 179, 211, 0.2);
-    --special-neutral-light: rgba(125, 181, 79, 1);
-    --special-neutral-dark: rgba(108, 158, 66, 1);
-    --special-warm-light: rgba(97, 80, 72, 1);
-    --special-warm-dark: rgba(117, 98, 87, 1);
-}
-
-body {
-    margin: 0;
-    font-family: "Roboto", "Open Sans", sans-serif;
-    color: var(--basic-black);
-    background-color: var(--basic-light);
+  /* Base colors */
+  --basic-black: #000000;
+  --basic-dark: #333333;
+  --basic-grey: #e5e5e5;
+  --basic-light: #f2f2f2;
+  --basic-white: #ffffff;
+  /* Status colors */
+  --status-success: #7db550;
+  --status-warning: #fd922e;
+  --status-error: #ff5757;
+  /* Special colors*/
+  --special-cold-dark: #68a2ca;
+  --special-cold-light: #83b3d3;
+  --special-cold-light-12: rgba(131, 179, 211, 0.12);
+  --special-cold-light-20: rgba(131, 179, 211, 0.2);
+  --special-neutral-light: #7DB54F;
+  --special-neutral-dark: #6C9E42;
+  --special-warm-light: #756257;
+  --special-warm-dark: #615048;
 }
