@@ -18,6 +18,8 @@
   --special-neutral-dark: #6C9E42;
   --special-warm-light: #756257;
   --special-warm-dark: #615048;
+  /* Shadows */
+  --shadow: rgba(0, 0, 0, 0.2);
 }
 
 @font-face {
@@ -36,20 +38,67 @@
   font-display: swap;
 }
 
-body {
-  margin: 0;
-  font-family: "PT Sans", sans-serif;
-  color: var(--basic-black);
-  background-color: var(--basic-light);
-  font-size: 20px;
-  line-height: 26px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .page-body {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--basic-black);
   background-color: var(--basic-white);
-  margin-right: 40px;
-  margin-left: 40px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  margin: 0;
+}
+
+.page-container {
+  width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.page-wrapper {
+  width: 100%;
+  box-shadow: 0px 0px 15px var(--shadow);
+}
+
+.page-innner-wrapper {
+  width: 100%;
+  padding: 0 72px;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
 }
 
 .navigation-link {
@@ -76,21 +125,33 @@ body {
   background-color: var(--special-warm-light);
 }
 
-.welcome-wrapper {
-  width: 1200px;
-  height: 485px;
+.welcome {
+  position: relative;
+  min-height: 485px;
   background-color: var(--basic-grey);
   background-image: url("../images/welcome/welcome-bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  padding: 51px 0 82px 0;
 }
 
-.welcome-divider {
-  width: 1200px;
+.welcome::after {
+  display: block;
+  content: "";
+  width: 100%;
   height: 57px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   background-image: url("../images/welcome/welcome-divider.png");
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+.welcome-img {
+  width: 458px;
+  height: 352px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantages-slogan {
@@ -183,7 +244,7 @@ body {
 }
 
 .btn-flat {
-  background-color: transparent
+  background-color: transparent;
 }
 
 .btn-size-l {
@@ -232,7 +293,6 @@ body {
   background-size: 20px 16px;
 }
 
-
 .footer-phone {
   color: var(--basic-black);
   font-weight: 400;
@@ -241,4 +301,22 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.footer-logo {
+  color: black;
+  transition: color 0.350s ease-in-out, opacity 0.350s ease-in-out;
+}
+
+.footer-logo:hover {
+  color: var(--special-warm-light);
+}
+
+.footer-logo:focus {
+  color: var(--special-warm-light);
+  outline: none;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
 }
