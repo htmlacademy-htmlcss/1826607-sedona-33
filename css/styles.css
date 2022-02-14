@@ -86,7 +86,7 @@ fieldset {
   font-weight: 400;
   line-height: 26px;
   color: var(--basic-black);
-  background-color: var(--basic-white);
+  background-color: var(--basic-light);
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -95,14 +95,59 @@ fieldset {
 
 .page-main {
   flex-grow: 1;
+  background-color: var(--basic-white);
 }
 
 .page-container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
   box-shadow: 0px 0px 15px var(--shadow);
 }
+
+.inner-container {
+  background-color: var(--basic-white);
+  padding: 0 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .catalog {
   background-image: url("../images/catalog-bg.jpg");
@@ -505,7 +550,7 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 72px 30px 72px;
+  padding: 40px 0 30px 0;
   margin: 0 auto;
 }
 
