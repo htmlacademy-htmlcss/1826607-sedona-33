@@ -226,18 +226,6 @@ fieldset {
   border-bottom: 1px solid var(--basic-grey);
 }
 
-/* .catalog-footer-more .btn-primary {
-  width: 619px;
-  padding: 17px 0;
-  display: block;
-  margin: 0 auto;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: var(--special-cold-light);
-} */
-
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
@@ -249,23 +237,48 @@ fieldset {
   margin-bottom: 45px;
 }
 
-.catalog-sort-list {
+.catalog-sort-view {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.catalog-sort-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.sort-link {
   width: 48px;
   height: 48px;
-  padding: 17px 16px;
-  margin-right: 8px;
   border: 2px solid var(--basic-grey);
   border-radius: 4px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: border 150ms ease-in-out;
+}
+
+.sort-link:hover,
+.sort-link:focus {
+  border: 2px solid var(--special-cold-light);
+}
+
+.sort-link:active {
+  border: 2px solid var(--basic-black);
+}
+
+.sort-link:last-child {
+  margin-right: 0;
+}
+
+.sort-link-current {
+  border: 2px solid var(--basic-black);
+}
+
+.sort-link-cards {
+  background-image: url(../images/icons/ic-view-title.svg);
+}
+
+.sort-link-full {
+  background-image: url(../images/icons/ic-view-slideshow.svg);
+}
+
+.sort-link-list {
+  background-image: url(../images/icons/ic-view-list.svg);
 }
 
 .catalog-control {
@@ -273,14 +286,6 @@ fieldset {
   border: 2px solid #E6E6E6;
   border-radius: 4px;
   padding: 12px 20px;
-}
-
-.catalog-sort-item:last-child {
-  margin-right: 0;
-}
-
-.sort-item-current {
-  border: 2px solid var(--basic-black);
 }
 
 .filters-inner-wrapper {
@@ -305,11 +310,6 @@ fieldset {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.advantage-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .advantages-item {
@@ -345,6 +345,7 @@ fieldset {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .advantage-number {
@@ -566,10 +567,11 @@ fieldset {
 }
 
 .footer-inner-wrapper {
+  background-color: var(--basic-white);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 0 30px 0;
+  padding: 40px 72px 30px 72px;
   margin: 0 auto;
 }
 
