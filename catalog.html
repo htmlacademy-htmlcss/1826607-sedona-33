@@ -50,21 +50,23 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="catalog">
-      <h1 class="header-title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html" aria-label="Главная">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 0.300003L0 5.8V12H12V5.8L6 0.300003ZM11 11H1V6.2L6 1.7L11 6.2V11Z" fill="white" />
-              <path d="M4 10H5V7.5H7V10H8V6.5H4V10Z" fill="white" />
-            </svg>
-          </a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
-        </li>
-      </ul>
+    <section class="catalog inner-container">
+      <div class="catalog-header">
+        <h1 class="header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html" aria-label="Главная">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0.300003L0 5.8V12H12V5.8L6 0.300003ZM11 11H1V6.2L6 1.7L11 6.2V11Z" fill="white" />
+                <path d="M4 10H5V7.5H7V10H8V6.5H4V10Z" fill="white" />
+              </svg>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+      </div>
       <div class="catalog-filtes-wrapper">
         <form class="filters-inner-wrapper" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filters-group">
@@ -132,11 +134,13 @@
       <ul class="catalog-list">
         <li class="catalog-item">
           <article class="hotel-card">
-            <a class="hotel-card-img" href="#nowhere">
+            <a href="#nowhere">
               <img src="images/hotels/hotel-1.jpg" width="299" height="206" alt="Гостиница Amara Resort & Spa">
             </a>
             <div class="hotel-card-content">
-              <a class="hotel-card-title">Desert Quail Inn</a>
+              <a class="hotel-card-title" href="#nowhere">
+                <h2>Amara Resort & Spa
+              </a>
               <div class="hotel-card-row">
                 <p class="hotel-type">Гостиница</p>
                 <p class="hotel-price">От 4000 ₽</p>
@@ -154,11 +158,13 @@
         </li>
         <li class="catalog-item">
           <article class="hotel-card">
-            <a class="hotel-card-img" href="#nowhere">
+            <a href="#nowhere">
               <img src="images/hotels/hotel-2.jpg" width="299" height="206" alt="Гостиница Desert Quail Inn">
             </a>
             <div class="hotel-card-content">
-              <a class="hotel-card-title">Desert Quail Inn</a>
+              <a class="hotel-card-title" href="#nowhere">
+                <h2>Desert Quail Inn</h2>
+              </a>
               <div class="hotel-card-row">
                 <p class="hotel-type">Гостиница</p>
                 <p class="hotel-price">От 3000 ₽</p>
@@ -176,11 +182,13 @@
         </li>
         <li class="catalog-item">
           <article class="hotel-card">
-            <a class="hotel-card-img" href="#nowhere">
+            <a href="#nowhere">
               <img src="images/hotels/hotel-3.jpg" width="299" height="206" alt="Гостиница Villas at Poco Diablo">
             </a>
             <div class="hotel-card-content">
-              <a class="hotel-card-title">Villas at Poco Diablo</a>
+              <a class="hotel-card-title" href="#nowhere">
+                <h2>Villas at Poco Diablo</h2>
+              </a>
               <div class="hotel-card-row">
                 <p class="hotel-type">Гостиница</p>
                 <p class="hotel-price">От 2000 ₽</p>
@@ -198,11 +206,13 @@
         </li>
         <li class="catalog-item">
           <article class="hotel-card">
-            <a class="hotel-card-img" href="#nowhere">
+            <a href="#nowhere">
               <img src="images/hotels/hotel-4.jpg" width="299" height="206" alt="Гостиница Amara Resort & Spa">
             </a>
             <div class="hotel-card-content">
-              <a class="hotel-card-title">GreenTree Inn</a>
+              <a class="hotel-card-title" href="#nowhere">
+                <h2>GreenTree Inn</h2>
+              </a>
               <div class="hotel-card-row">
                 <p class="hotel-type">Гостиница</p>
                 <p class="hotel-price">От 3000 ₽</p>
@@ -220,12 +230,12 @@
         </li>
       </ul>
       <div class="catalog-footer-more">
-        <button class="btn">Загрузить ещё</button>
+        <button class="btn" type="button">Загрузить ещё</button>
       </div>
       <div class="catalog-footer-controls">
         <ul class="pagination">
-          <li class="pagination-item pagination-item-disabled">
-            <a class="pagination-link" href="#nowhere">1</a>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-link-current" href="#nowhere">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#nowhere">2</a>
