@@ -12,10 +12,9 @@
 
 <body class="page-body page-container">
   <header class="page-header">
-    <div class="inner-container">
-      <nav class="navigation">
+      <nav class="navigation inner-container">
         <a class="navigation-logo" href="index.html">
-          <img src="images/logo-sedona.svg" width="139" height="70" alt="Логотип Седоны">
+          <img src="images/logo-sedona.svg" width="139" height="70" alt="Логотип Седоны.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -28,26 +27,31 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <div class="user-navigation">
-          <a class="user-navigation-item" href="#nowhere" aria-label="Искать по гостиницам">
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19.0257 17.05L15.3152 13.35C16.318 12.05 17.02 10.35 17.02 8.44995C17.02 4.04995 13.4098 0.449951 8.99732 0.449951C4.58483 0.449951 0.974609 4.14995 0.974609 8.54995C0.974609 12.95 4.58483 16.55 8.99732 16.55C10.8024 16.55 12.5072 15.95 13.9112 14.85L17.6217 18.55L19.0257 17.05ZM8.99732 14.55C5.68795 14.55 2.98029 11.85 2.98029 8.54995C2.98029 5.24995 5.68795 2.54995 8.99732 2.54995C12.3067 2.54995 15.0143 5.24995 15.0143 8.54995C15.0143 11.85 12.3067 14.55 8.99732 14.55Z"
-                fill="black" />
-            </svg>
-          </a>
-          <a class="user-navigation-item" href="#nowhere" aria-label="Перейти в избранное">
-            <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M9.44382 17C9.14296 17 8.84211 16.9 8.64155 16.6C3.22622 10.5 1.92253 9.1 1.62168 8.7C0.91969 7.8 0.518555 6.6 0.518555 5.4C0.518555 2.4 2.92537 0 6.03416 0C7.33785 0 8.54126 0.5 9.5441 1.3C10.5469 0.5 11.8506 0 13.054 0C16.0625 0 18.5696 2.4 18.5696 5.4C18.5696 6.7 18.0682 7.9 17.266 8.8L10.2461 16.7C10.0455 16.9 9.84495 17 9.44382 17ZM3.42679 7.5C3.72764 7.9 6.93672 11.5 9.5441 14.4L15.7617 7.4C16.2631 6.9 16.4637 6.2 16.4637 5.4C16.4637 3.6 14.9594 2.1 13.1543 2.1C12.1515 2.1 11.1486 2.6 10.4467 3.4C10.1458 3.7 9.84495 3.8 9.5441 3.8C9.24325 3.8 8.9424 3.6 8.74183 3.4C8.03984 2.6 7.037 2.1 6.03416 2.1C4.22906 2.1 2.7248 3.6 2.7248 5.4C2.62452 6.3 3.02565 7 3.42679 7.5C3.3265 7.5 3.3265 7.5 3.42679 7.5Z"
-                fill="black" />
-            </svg>
-            <span class="badge badge-primary">12</span>
-          </a>
-          <a class="btn btn-brown" href="#nowhere" aria-label="Забронировать гостиницу">Хочу сюда</a>
-        </div>
+
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#nowhere" aria-label="Искать по гостиницам">
+              <!-- <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.0257 17.05L15.3152 13.35C16.318 12.05 17.02 10.35 17.02 8.44995C17.02 4.04995 13.4098 0.449951 8.99732 0.449951C4.58483 0.449951 0.974609 4.14995 0.974609 8.54995C0.974609 12.95 4.58483 16.55 8.99732 16.55C10.8024 16.55 12.5072 15.95 13.9112 14.85L17.6217 18.55L19.0257 17.05ZM8.99732 14.55C5.68795 14.55 2.98029 11.85 2.98029 8.54995C2.98029 5.24995 5.68795 2.54995 8.99732 2.54995C12.3067 2.54995 15.0143 5.24995 15.0143 8.54995C15.0143 11.85 12.3067 14.55 8.99732 14.55Z"
+                  fill="black" />
+              </svg> -->
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#nowhere" aria-label="Перейти в избранное">
+              <!-- <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.44382 17C9.14296 17 8.84211 16.9 8.64155 16.6C3.22622 10.5 1.92253 9.1 1.62168 8.7C0.91969 7.8 0.518555 6.6 0.518555 5.4C0.518555 2.4 2.92537 0 6.03416 0C7.33785 0 8.54126 0.5 9.5441 1.3C10.5469 0.5 11.8506 0 13.054 0C16.0625 0 18.5696 2.4 18.5696 5.4C18.5696 6.7 18.0682 7.9 17.266 8.8L10.2461 16.7C10.0455 16.9 9.84495 17 9.44382 17ZM3.42679 7.5C3.72764 7.9 6.93672 11.5 9.5441 14.4L15.7617 7.4C16.2631 6.9 16.4637 6.2 16.4637 5.4C16.4637 3.6 14.9594 2.1 13.1543 2.1C12.1515 2.1 11.1486 2.6 10.4467 3.4C10.1458 3.7 9.84495 3.8 9.5441 3.8C9.24325 3.8 8.9424 3.6 8.74183 3.4C8.03984 2.6 7.037 2.1 6.03416 2.1C4.22906 2.1 2.7248 3.6 2.7248 5.4C2.62452 6.3 3.02565 7 3.42679 7.5C3.3265 7.5 3.3265 7.5 3.42679 7.5Z"
+                  fill="black" />
+              </svg> -->
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-button" href="#nowhere">Хочу сюда</a>
+          </li>
+        </ul>
       </nav>
-    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Визитка города Седона</h1>
@@ -68,7 +72,7 @@
             <p class="advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="big-item-img">
-            <img src="images/advantages/advantage-big-1.jpg" width="800" height="384" alt="Вид на Седону из гостиницы">
+            <img src="images/advantages/advantage-big-1.jpg" width="800" height="384" alt="Вид на Седону из гостиницы.">
           </div>
         </li>
         <li class="advantages-item advantage-home">
@@ -90,7 +94,7 @@
             <p class="advantage-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
           <div class="big-item-img">
-            <img src="images/advantages/advantage-big-2.jpg" width="800" height="384" alt="Вид на Гранд-Каньон днём">
+            <img src="images/advantages/advantage-big-2.jpg" width="800" height="384" alt="Вид на Гранд-Каньон днём.">
           </div>
         </li>
         <li class="advantages-item">
@@ -134,7 +138,7 @@
   <footer class="page-footer">
     <div class="footer-inner-wrapper">
       <ul class="footer-social-list">
-        <li class="footer-social-item twitter">
+        <li class="footer-social-item">
           <a href="https://twitter.com/htmlacademy_ru" aria-label="Twitter" target="_blank">
             <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_24196_690)">
@@ -150,14 +154,14 @@
             </svg>
           </a>
         </li>
-        <li class="footer-social-item facebook">
+        <li class="footer-social-item">
           <a href="https://twitter.com/htmlacademy_ru" aria-label="Facebook" target="_blank">
             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z" fill="#83B3D3" />
             </svg>
           </a>
         </li>
-        <li class="footer-social-item youtube">
+        <li class="footer-social-item">
           <a href="https://twitter.com/htmlacademy_ru" aria-label="You Tube" target="_blank">
             <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_24196_686)">
