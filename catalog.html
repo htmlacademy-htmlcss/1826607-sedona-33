@@ -137,8 +137,8 @@
                 <div class="range">
                   <div class="range-bar">
                     <div class="range-scale"></div>
-                    <button class="range-btn range-btn-min" type="button"></button>
-                    <button class="range-btn range-btn-max" type="button"></button>
+                    <button class="range-btn range-btn-min" type="button" aria-label="Уменьшить"></button>
+                    <button class="range-btn range-btn-max" type="button" aria-label="Увеличить"></button>
                   </div>
                 </div>
                 <button class="filters-btn btn btn-reset" type="reset" value="Сбросить">Сбросить</button>
@@ -149,7 +149,9 @@
       </div>
       <div class="catalog-sort-wrapper inner-container">
         <h2 class="catalog-title">Найдено гостиниц: <span class="search-count">38</span></h2>
-        <a class="catalog-control" href="#nowhere">Сначала дешёвые<span class="ic-arrow-down"></span></a>
+        <div class="catalog-control">
+          <a href="#nowhere">Сначала дешёвые</a>
+        </div>
         <div class="catalog-sort-view">
           <a class="sort-link sort-link-cards sort-link-current" href="#nowhere" aria-label="Показать карточками"></a>
           <a class="sort-link sort-link-full" href="#nowhere" aria-label="Показать по одной в полный вид"></a>
@@ -365,6 +367,38 @@
       </a>
     </div>
   </footer>
+  <div class="modal-fade modal-hidden">
+    <div class="modal modal-search">
+      <div class="modal-header">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close" aria-label="Закрыть окно"></button>
+      </div>
+      <section class="modal-content">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form-input-wrapper">
+            <label class="form-label" for="date-arrival">Дата заезда:</label>
+            <input class="form-input" type="date" id="date-arrival" name="date-arrival">
+          </div>
+          <div class="form-input-wrapper">
+            <label class="form-label" for="date-departure">Дата выезда:</label>
+            <input class="form-input" type="date" id="date-departure" name="date-departure">
+          </div>
+          <div class="form-input-list">
+            <div class="form-input-wrapper">
+              <label class="form-label" for="person-adult">Взрослые:</label>
+              <input class="form-input" type="number" id="person-adult" name="person-adult">
+            </div>
+            <div class="form-input-wrapper">
+              <label class="form-label" for="person-children">Дети:</label>
+              <span class="ic-hint"></span>
+              <input class="form-input" type="number" id="person-children" name="person-children">
+            </div>
+          </div>
+          <button class="btn btn-search" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
