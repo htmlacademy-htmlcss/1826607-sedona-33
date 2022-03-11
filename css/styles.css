@@ -1087,7 +1087,62 @@ img {
 }
 
 .control-input {
+  position: absolute;
+  -webkit-appearence: none;
+  -moz-appearence: none;
+  appearance: none;
+}
+
+.checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: var(--basic-white);
+  border-radius: 4px;
   margin-right: 19px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.checkbox:hover {
+  opacity: .6;
+}
+
+.checkbox:focus {
+  opacity: .6;
+  outline: 3px solid var(--special-cold-light);
+}
+
+.checkbox:active {
+  opacity: .3;
+  outline: 0;
+}
+
+.control-input:checked + .checkbox {
+  background-image: url("/images/icons/ic-checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.radio {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  margin-right: 19px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.radio:focus {
+  outline: 3px solid var(--special-cold-light);
+}
+
+.control-input:checked + .radio {
+  background-image: url("/images/icons/ic-radiopin.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .control-input-range {

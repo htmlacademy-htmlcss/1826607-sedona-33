@@ -205,6 +205,38 @@
       </a>
     </div>
   </footer>
+  <div class="modal-fade modal-hidden">
+    <div class="modal modal-search">
+      <div class="modal-header">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close" aria-label="Закрыть окно"></button>
+      </div>
+      <section class="modal-content">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form-input-wrapper">
+            <label class="form-label" for="date-arrival">Дата заезда:</label>
+            <input class="form-input" type="date" id="date-arrival" name="date-arrival">
+          </div>
+          <div class="form-input-wrapper">
+            <label class="form-label" for="date-departure">Дата выезда:</label>
+            <input class="form-input" type="date" id="date-departure" name="date-departure">
+          </div>
+          <div class="form-input-list">
+            <div class="form-input-wrapper">
+              <label class="form-label" for="person-adult">Взрослые:</label>
+              <input class="form-input" type="number" id="person-adult" name="person-adult">
+            </div>
+            <div class="form-input-wrapper">
+              <label class="form-label" for="person-children">Дети:</label>
+              <span class="ic-hint"></span>
+              <input class="form-input" type="number" id="person-children" name="person-children">
+            </div>
+          </div>
+          <button class="btn btn-search" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 
