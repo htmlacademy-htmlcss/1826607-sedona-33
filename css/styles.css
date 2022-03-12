@@ -253,7 +253,7 @@ img {
   font-size: 16px;
   line-height: 20px;
   background-color: var(--special-warm-light);
-  transition: color 0.2s ease, opacity 0.2s ease;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
 }
 
 .btn-brown:hover {
@@ -1393,8 +1393,8 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 .modal-fade {
+  display: none;
   position: fixed;
-  display: flex;
   left: 0;
   top: 0;
   z-index: 1;
@@ -1403,8 +1403,8 @@ input[type="range"]::-webkit-slider-runnable-track {
   height: 100%;
 }
 
-.modal-hidden {
-  display: none;
+.modal-show {
+  display: flex;
 }
 
 .modal {
