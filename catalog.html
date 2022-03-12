@@ -380,23 +380,34 @@
       </div>
       <section class="modal-content">
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form-input-wrapper">
+          <div class="form-arrival">
             <label class="form-label" for="date-arrival">Дата заезда:</label>
-            <input class="form-input" type="date" id="date-arrival" name="date-arrival">
-          </div>
-          <div class="form-input-wrapper">
-            <label class="form-label" for="date-departure">Дата выезда:</label>
-            <input class="form-input" type="date" id="date-departure" name="date-departure">
-          </div>
-          <div class="form-input-list">
-            <div class="form-input-wrapper">
-              <label class="form-label" for="person-adult">Взрослые:</label>
-              <input class="form-input" type="number" id="person-adult" name="person-adult">
+            <div class="arrival-input">
+              <input class="form-input" type="text" id="date-arrival" name="date-arrival" placeholder="27 апреля 2020">
+              <small class="form-helper-text">Мы не можем отправить вас в прошлое.</small>
             </div>
-            <div class="form-input-wrapper">
-              <label class="form-label" for="person-children">Дети:</label>
+          </div>
+          <div class="form-departure">
+            <label class="form-label" for="date-departure">Дата выезда:</label>
+            <div class="departure-input">
+              <input class="form-input" type="text" id="date-departure" name="date-departure"
+                placeholder="1 сентября 2021">
+              <small class="form-helper-text">На эти даты есть свободные номера. Пока есть.</small>
+            </div>
+          </div>
+          <div class="form-persons">
+            <div class="persons-adult">
+              <label class="form-label" for="adult-count">Взрослые:</label>
+              <button class="btn-minus" type="button"></button>
+              <input class="form-input" type="number" id="adult-count" name="adult-count" placeholder="2">
+              <button class="btn-plus" type="button"></button>
+            </div>
+            <div class="persons-children">
+              <label class="form-label" for="children-count">Дети:</label>
               <span class="ic-hint"></span>
-              <input class="form-input" type="number" id="person-children" name="person-children">
+              <button class="btn-minus" type="button"></button>
+              <input class="form-input" type="number" id="children-count" name="children-count" placeholder="1">
+              <button class="btn-plus" type="button"></button>
             </div>
           </div>
           <button class="btn btn-search" type="submit">Найти</button>
