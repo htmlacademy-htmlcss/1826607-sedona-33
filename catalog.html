@@ -29,7 +29,7 @@
       </ul>
       <ul class="navigation-user">
         <li class="navigation-user-item">
-          <a class="navigation-user-link modal-open" href="#nowhere" aria-label="Искать по гостиницам">
+          <a class="navigation-user-link" href="#nowhere" aria-label="Искать по гостиницам">
             <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M19.0257 17.05L15.3152 13.35C16.318 12.05 17.02 10.35 17.02 8.44995C17.02 4.04995 13.4098 0.449951 8.99732 0.449951C4.58483 0.449951 0.974609 4.14995 0.974609 8.54995C0.974609 12.95 4.58483 16.55 8.99732 16.55C10.8024 16.55 12.5072 15.95 13.9112 14.85L17.6217 18.55L19.0257 17.05ZM8.99732 14.55C5.68795 14.55 2.98029 11.85 2.98029 8.54995C2.98029 5.24995 5.68795 2.54995 8.99732 2.54995C12.3067 2.54995 15.0143 5.24995 15.0143 8.54995C15.0143 11.85 12.3067 14.55 8.99732 14.55Z"
@@ -372,50 +372,6 @@
       </a>
     </div>
   </footer>
-  <div class="modal-fade">
-    <div class="modal modal-search">
-      <div class="modal-header">
-        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <button class="modal-close" aria-label="Закрыть окно"></button>
-      </div>
-      <section class="modal-content">
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form-arrival">
-            <label class="form-label" for="date-arrival">Дата заезда:</label>
-            <div class="arrival-input">
-              <input class="form-input" type="text" id="date-arrival" name="date-arrival" placeholder="27 апреля 2020">
-              <small class="form-helper-text">Мы не можем отправить вас в прошлое.</small>
-            </div>
-          </div>
-          <div class="form-departure">
-            <label class="form-label" for="date-departure">Дата выезда:</label>
-            <div class="departure-input">
-              <input class="form-input" type="text" id="date-departure" name="date-departure"
-                placeholder="1 сентября 2021">
-              <small class="form-helper-text">На эти даты есть свободные номера. Пока есть.</small>
-            </div>
-          </div>
-          <div class="form-persons">
-            <div class="persons-adult">
-              <label class="form-label" for="adult-count">Взрослые:</label>
-              <button class="btn-minus" type="button"></button>
-              <input class="form-input" type="number" id="adult-count" name="adult-count" placeholder="2">
-              <button class="btn-plus" type="button"></button>
-            </div>
-            <div class="persons-children">
-              <label class="form-label" for="children-count">Дети:</label>
-              <span class="ic-hint tooltip-toggle" type="button" aria-labelledby="tooltip-label"></span>
-              <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-              <button class="btn-minus" type="button"></button>
-              <input class="form-input" type="number" id="children-count" name="children-count" placeholder="1">
-              <button class="btn-plus" type="button"></button>
-            </div>
-          </div>
-          <button class="btn btn-search" type="submit">Найти</button>
-        </form>
-      </section>
-    </div>
-  </div>
   <script src="js/script.js"></script>
 </body>
 

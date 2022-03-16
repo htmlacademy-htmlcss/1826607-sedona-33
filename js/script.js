@@ -1,11 +1,20 @@
-const modal = document.querySelector('.modal-fade'),
-modal_open = document.querySelector('.modal-open'),
-modal_close = document.querySelector('.modal-close');
+const modal = document.querySelector('.modal');
+const modalOpen = document.querySelector('.modal-open');
+const modalOpenMainBtn = document.querySelector('.js-modal');
 
-modal_open.addEventListener('click', ()=> {
-    modal.classList.toggle('modal-show');
+const modalClose = document.querySelector('.modal-close');
+
+modalOpen.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  modal.classList.add('modal-show');
 });
 
-modal_close.addEventListener('click', ()=> {
-    modal.classList.toggle('modal-show');
+modalOpenMainBtn.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  modal.classList.add('modal-show');
+});
+
+modalClose.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  modal.classList.remove('modal-show');
 });
