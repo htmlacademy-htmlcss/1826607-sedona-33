@@ -106,7 +106,6 @@ img {
 .navigation {
   width: 100%;
   display: flex;
-  align-items: center;
 }
 
 .navigation-logo {
@@ -487,6 +486,7 @@ img {
 }
 
 .btn-more {
+  max-width: 134px;
   line-height: 21px;
   padding: 9px 22px 7px;
 }
@@ -986,7 +986,8 @@ img {
 
 .subscription-input:focus,
 .subscription-input:active {
-  outline: 3px solid var(--special-cold-light);
+  box-shadow: inset 0px 0px 0px 3px var(--special-cold-light);
+  outline: none;
   background-color: var(--basic-grey);
 }
 
@@ -1100,7 +1101,7 @@ img {
 
 .control {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   cursor: pointer;
   margin-bottom: 13px;
 }
@@ -1112,6 +1113,7 @@ img {
 .control-label {
   font-size: 18px;
   line-height: 23px;
+  margin-top: -1px;
 }
 
 .control-input {
@@ -1200,11 +1202,6 @@ input[type="range"]::-webkit-slider-runnable-track {
   opacity: 0.3;
 }
 
-.filters-list .control-input {
-  width: 20px;
-  height: 20px;
-}
-
 .control-input:last-child {
   margin-right: 0;
 }
@@ -1227,7 +1224,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  max-width: 127px;
+  max-width: 129px;
   margin: 0;
   padding: 0;
 }
@@ -1433,11 +1430,13 @@ input[type="range"]::-webkit-slider-runnable-track {
 .range-btn:focus {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border: 3px solid var(--special-cold-light);
+  outline: none;
 }
 
 .range-btn:active {
   box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
   border: 2px solid var(--special-cold-light);
+  outline: none;
 }
 
 .range-btn-min {
